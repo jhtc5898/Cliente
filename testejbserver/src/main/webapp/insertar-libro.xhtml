@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<!-- Crear formulario, relacionado con el GestionCategoriaBean -->
+	<h:form>
+		<h:outputLabel value="ISBN">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.isbn}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Titulo">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.titulo}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Editorial">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.editorial}">
+		</h:inputText>
+		<br/>	
+		
+		<h:outputLabel value="Año">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.anio}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Descripcion">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.descripcion}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Numero de paginas">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.numPaginas}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Idioma">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.idioma}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Stock">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.stock}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Autor">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.autor}">
+		</h:inputText>
+		<br/>
+		
+		<h:outputLabel value="Categoria">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionLibroBean.categoria}">
+		</h:inputText>
+		<br/>
+		
+		<h:commandButton value="Guardar" action="#{gestionLibroBean.insertarLibro()}">
+		</h:commandButton>
+	</h:form>
+</body> 
+</html>

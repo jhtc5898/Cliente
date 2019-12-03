@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+
+<body> 
+	<!-- Crear formulario, relacionado con el GestionAutorBean -->
+	<h1>Ingresar nuevo autor</h1>
+	<h:form>
+		<p>
+		<h:outputLabel value="Nombre">
+		</h:outputLabel>
+		<h:inputText value="#{gestionAutorBean.nombre}">
+		</h:inputText>
+		</p>		
+		
+		<p>
+		<h:outputLabel value="Nacionalidad">
+		</h:outputLabel>
+		<h:inputText value="#{gestionAutorBean.nacionalidad}">
+		</h:inputText>
+		<br/>
+		</p>
+			
+		<p>		
+		<h:outputLabel value="Descripcion">
+		</h:outputLabel>
+		<h:inputText value="#{gestionAutorBean.descripcion}">
+		</h:inputText>
+		</p>
+		
+		<h:commandButton value="Guardar" action="#{gestionAutorBean.insertarAutor()}">
+		</h:commandButton>
+	</h:form>
+</body> 
+</html>

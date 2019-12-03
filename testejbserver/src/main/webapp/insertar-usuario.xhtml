@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<!-- Crear formulario, relacionado con el GestionCategoriaBean -->
+	<h:form>
+		<h:outputLabel value="Cedula">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionUsuarioBean.cedula}">
+		</h:inputText>
+		
+		<h:outputLabel value="Nombre">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionUsuarioBean.nombre}">
+		</h:inputText>
+		
+		<h:outputLabel value="Direccion">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionUsuarioBean.direccion}">
+		</h:inputText>
+		
+		<h:outputLabel value="Telefono">
+		</h:outputLabel>
+		
+		<h:inputText value="#{gestionUsuarioBean.telefono}">
+		</h:inputText>
+		
+		<h:commandButton value="Guardar" action="#{gestionUsuarioBean.insertarUsuario()}">
+		</h:commandButton>
+	</h:form>
+</body> 
+</html>

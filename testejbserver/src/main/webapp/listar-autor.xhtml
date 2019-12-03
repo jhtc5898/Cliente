@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<h1>Autores guardados</h1>
+	<h:dataTable value="#{gestionAutorBean.autorList}" var="autor">
+		<h:column>
+			#{autor.nombre}
+			<f:facet name="header">Nombre</f:facet>
+		</h:column>
+		
+		<h:column>
+			#{autor.nacionalidad}
+			<f:facet name="header">Nacionalidad</f:facet>
+		</h:column>
+		
+		<h:column>
+			#{autor.descripcion}
+			<f:facet name="header">Descripcion</f:facet>
+		</h:column>
+	</h:dataTable>			
+	<h:form>
+		<h:commandButton value="Regresar" action="insertar-autor"/>
+	</h:form>
+</body> 
+</html>
